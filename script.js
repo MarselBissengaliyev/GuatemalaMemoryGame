@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     formBtn.addEventListener('click', (e) => {
         e.preventDefault();
+        if (formBtn.classList.contains('disabled')) {
+            return true;
+        }
         localStorage.setItem('users', JSON.stringify([...users, {
             id: users.length,
             name: name.value,
