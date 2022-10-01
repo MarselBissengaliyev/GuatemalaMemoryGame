@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardItem = document.createElement('div');
         cardItem.innerHTML = `
             <img src="img/memo-0${i}.jpg"/>
-            <div></div>    
+            <div>?</div>    
         `;
         cardItem.classList.add('cards__item');
         cardItem.style.order = Math.round(Math.random() * 10);
